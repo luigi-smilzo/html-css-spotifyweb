@@ -78,11 +78,11 @@ ul {
   flex-basis: 215px;
   display: flex;
   flex-direction: column;
+  background: #000;
 }
 
 .sidebar-top {
   flex-grow: 1;
-  background: #000;
 }
 
 .sidebar-top img {
@@ -144,8 +144,42 @@ ul {
 }
 
 .sidebar-bottom {
-  height: 80px; /*debug*/
-  background: #222;
+  padding: 10px 20px;
+}
+
+.sidebar-bottom .install {
+  position: relative;
+  color: #686868;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.sidebar-bottom .install::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #686868;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar-bottom .install i {
+  margin-right: 10px
+}
+
+.sidebar-bottom .user {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.sidebar-bottom .user i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 /* CONTENT */
