@@ -53,6 +53,43 @@ a:active {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+/* LAYOUT */
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* MAIN WINDOW */
+#main-window {
+  flex-grow: 1;
+  display: flex;
+}
+
+
+/* SIDEBAR */
+#sidebar {
+  flex-basis: 215px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-top {
+  flex-grow: 1;
+  background: #000;
+}
+
+.sidebar-top img {
+  padding: 20px 70px 20px 20px;
+  max-width: 100%;
+}
+
 .sidebar-top .nav-menu li {
   border-left: 3px solid transparent;
 }
@@ -83,35 +120,27 @@ a:active {
   margin-right: 8px;
 }
 
-/* LAYOUT */
-#app {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+.user-playlists {
+  padding: 20px;
 }
 
-/* MAIN WINDOW */
-#main-window {
-  flex-grow: 1;
-  display: flex;
+.user-playlists h4 {
+  font-size: 14px;
 }
 
-
-/* SIDEBAR */
-#sidebar {
-  flex-basis: 215px;
-  display: flex;
-  flex-direction: column;
+.user-playlists i {
+  font-size: 38px;
+  margin-right: 20px;
 }
 
-.sidebar-top {
-  flex-grow: 1;
-  background: #000;
+.user-playlists a:nth-child(2) {
+  font-size: 14px;
 }
 
-.sidebar-top img {
-  padding: 20px 70px 20px 20px;
-  max-width: 100%;
+.user-playlists a {
+  padding-left: 0;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .sidebar-bottom {
@@ -147,9 +176,6 @@ a:active {
 
 
 .content-menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   text-align: center;
 }
 
