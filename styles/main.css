@@ -81,6 +81,7 @@ ul {
   background: #000;
 }
 
+/* Top */
 .sidebar-top {
   flex-grow: 1;
 }
@@ -143,6 +144,11 @@ ul {
   line-height: 24px;
 }
 
+.user-playlists a:hover {
+  color: inherit;
+}
+
+/* Bottom */
 .sidebar-bottom {
   padding: 10px 20px;
 }
@@ -189,6 +195,7 @@ ul {
   background: #141921;
 }
 
+/* Top bar */
 .content-top-bar {
   position: absolute;
   top: 0;
@@ -204,6 +211,7 @@ ul {
   margin: 20px;
 }
 
+/* Menu */
 .content-menu {
   margin: 15px 0 30px;
 }
@@ -243,6 +251,7 @@ ul {
   opacity: 1;
 }
 
+/* Scrollable */
 #content .scrollable {
   position: absolute;
   top: 0;
@@ -264,7 +273,6 @@ ul {
 }
 
 .playlist {
-  position: relative;
   flex-basis: calc(100% / 6 - 15px);
   margin-right: 15px;
   text-align: center;
@@ -274,8 +282,36 @@ ul {
   margin: 0;
 }
 
+.playlist .img-container {
+  position: relative;
+  background: #000;
+}
+
 .playlist img {
+  display: block;
+  position: relative;
   width: 100%;
+  opacity: 1;
+}
+
+.playlist .img-container:hover img {
+  opacity: .5;
+}
+
+.playlist .img-container::after {
+  position: absolute;
+  content:'\f144';
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  font-family: "Font Awesome 5 Free";
+  font-size: 90px;
+  opacity: .5;
+  display: none;
+}
+
+.playlist .img-container:hover::after {
+  display: block;
 }
 
 .playlist h4 {
@@ -286,7 +322,8 @@ ul {
   margin: 10px 0 15px;
 }
 
-.rounded img {
+.rounded {
+  overflow: hidden;
   border-radius: 50%;
 }
 
