@@ -39,10 +39,40 @@ h5 {
   color: #686868;
   font-family: 'Montserrat', Sans-serif;
   font-weight: 400;
+  font-size: 11px;
 }
 
 a {
   text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:active {
+  color: inherit;
+}
+
+.sidebar-top .nav-menu li {
+  border-left: 3px solid #a3eb4d;
+  padding: 5px 15px;
+}
+
+.sidebar-top a {
+  color: #686868;
+  font-family: 'Montserrat', Sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.sidebar-top a:hover {
+  color: #fff;
+}
+
+.sidebar-top i {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 /* LAYOUT */
@@ -68,7 +98,12 @@ a {
 
 .sidebar-top {
   flex-grow: 1;
-  background: #444;
+  background: #000;
+}
+
+.sidebar-top img {
+  padding: 20px 70px 20px 20px;
+  max-width: 100%;
 }
 
 .sidebar-bottom {
@@ -80,7 +115,7 @@ a {
 #content {
   position: relative;
   flex-grow: 1;
-  background: #111;
+  background: #141921;
 }
 
 .content-top-bar {
@@ -129,7 +164,7 @@ a {
   position: absolute;
   width: 30px;
   height: 2px;
-  background: limegreen;
+  background: #a3eb4d;
   bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
@@ -189,6 +224,16 @@ a {
 
 .playlist a {
   color: inherit;
+}
+
+.playlist a h5:hover {
+  text-decoration: underline;
+  text-decoration-color: #686868;
+}
+
+.playlist a h4:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
 }
 
 /* BOTTOM PLAYER */
