@@ -159,8 +159,18 @@ h5 {
   padding: 10px 0;
 }
 
+.content-category > h5 {
+  margin: 10px 0 15px;
+}
+
+.rounded img {
+  border-radius: 50%;
+}
+
 /* BOTTOM PLAYER */
 #player {
   height: 80px; /*debug*/
   background: #333;
 }
+
+/* MEDIA QUERY */
