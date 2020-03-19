@@ -54,25 +54,33 @@ a:active {
 }
 
 .sidebar-top .nav-menu li {
+  border-left: 3px solid transparent;
+}
+
+.sidebar-top .nav-menu li:hover {
   border-left: 3px solid #a3eb4d;
-  padding: 5px 15px;
 }
 
 .sidebar-top a {
+  display: inline-block;
+  padding: 5px 15px;
+  width: 100%;
   color: #686868;
   font-family: 'Montserrat', Sans-serif;
   font-weight: 400;
   font-size: 12px;
 }
 
-.sidebar-top a:hover {
+.sidebar-top li:hover > a {
   color: #fff;
 }
 
 .sidebar-top i {
+  display: inline-block;
+  width: 24px;
   font-size: 24px;
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 /* LAYOUT */
