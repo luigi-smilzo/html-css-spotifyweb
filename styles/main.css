@@ -1,0 +1,142 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+}
+
+/* LAYOUT */
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* TYPOGRAPHY */
+h2 {
+  margin: 0;
+  font-family: 'Roboto', Sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Roboto', Sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  color: #686868;
+  font-family: 'Montserrat', Sans-serif;
+  font-weight: 400;
+}
+
+
+/* MAIN WINDOW */
+#main-window {
+    flex-grow: 1;
+    display: flex;
+}
+
+
+/* SIDEBAR */
+#sidebar {
+    flex-basis: 230px; /* larghezza sidebar */
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-top {
+    flex-grow: 1;
+    background: #444;
+}
+
+.sidebar-bottom {
+    height: 80px; /*debug*/
+    background: #222;
+}
+
+/* CONTENT */
+#content {
+    position: relative;
+    flex-grow: 1;
+    background: #000;
+}
+
+.content-top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: rgba(100, 50,0, .5);
+    z-index: 1;
+}
+
+.content-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.content-menu ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.content-menu ul li a {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #656565;
+  font-size: 13px;
+}
+
+.content-menu ul li a::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: limegreen;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.content-menu ul li a:hover::after {
+  opacity: 1;
+}
+
+#content .scrollable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    /* 90px = height di content-top-bar */
+    padding: 90px 15px 30px;
+}
+
+.content-menu {
+  
+}
+
+.content-category {
+    height: 200px; /* Debug */
+}
+
+
+/* BOTTOM PLAYER */
+#player {
+    height: 80px; /*debug*/
+    background: #333;
+}
