@@ -349,16 +349,16 @@ ul {
 
 /* BOTTOM PLAYER */
 #player {
-  height: 80px; /*debug*/
+  height: 80px;
   background: #333;
   display: flex;
-  justify-content: space-between;
+  padding: 16px 8px;
 }
 
 .now-playing-info,
 .volume {
   display: flex;
-  background: blue;
+  align-items: center;
   flex-basis: 12%;
 }
 
@@ -368,9 +368,43 @@ ul {
 }
 
 .now-playing-info img {
-  width: 40px;
+  height: 100%;
+  width: auto;
 }
 
+.track-name {
+  padding: 0 15px;
+  flex-grow: 1;
+}
+
+.track-name a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+
+.track-name h4 {
+  font-size: 12px;
+}
+
+.track-name h5 {
+  font-size: 10px;
+} 
+
+.now-playing-info .icons {
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #656565;
+  padding: 0 10px;
+}
+
+.now-playing-info .icons i {
+  padding: 0 5px;
+}
+
+.now-playing-info .icons a:hover {
+  color: #fff;
+}
 
 /* MEDIA QUERY */
 
