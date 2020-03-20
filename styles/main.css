@@ -119,10 +119,8 @@ ul {
   color: #fff;
 }
 
-.sidebar-top i {
-  display: inline-block;
+.sidebar-top img {
   width: 24px;
-  font-size: 24px;
   vertical-align: middle;
   margin-right: 8px;
 }
@@ -188,8 +186,10 @@ ul {
   padding-top: 10px;
 }
 
-.sidebar-bottom .user i {
-  font-size: 20px;
+.sidebar-bottom .user img {
+  width: 20px;
+  border-radius: 50%;
+  background: #666;
   vertical-align: middle;
   margin-right: 10px;
 }
@@ -351,7 +351,26 @@ ul {
 #player {
   height: 80px; /*debug*/
   background: #333;
+  display: flex;
+  justify-content: space-between;
 }
+
+.now-playing-info,
+.volume {
+  display: flex;
+  background: blue;
+  flex-basis: 12%;
+}
+
+.now-playing-controls {
+  flex-grow: 1;
+  background: red;
+}
+
+.now-playing-info img {
+  width: 40px;
+}
+
 
 /* MEDIA QUERY */
 
@@ -379,7 +398,7 @@ ul {
     padding: 5px 10px;
   }
 
-  .sidebar-top i {
+  .sidebar-top img {
     margin-right: 0;
   }
 
