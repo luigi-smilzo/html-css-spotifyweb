@@ -92,7 +92,7 @@ ul {
 
 .sidebar-top img.logo-small {
   width: 28px;
-  margin: 5px auto;
+  margin: 5px auto 15px;
   display: none;
 }
 
@@ -427,11 +427,13 @@ ul {
 .now-playing-controls .progress-bar {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .now-playing-controls .bar {
   position: relative;
-  width: 600px;
+  width: 50%;
   margin: 0 40px;
   height: 4px;
   border-radius: 4px;
@@ -501,7 +503,7 @@ ul {
     padding: 5px 10px;
   }
 
-  .sidebar-top img {
+  .sidebar-top img.logo-big {
     margin-right: 0;
   }
 
@@ -517,13 +519,17 @@ ul {
     border-left: none;
   }
 
+  .sidebar-top .nav-menu img {
+    margin: 0;
+  }
+
   .sidebar-bottom {
     padding: 10px 0px;
     text-align: center;
   }
 
   .sidebar-bottom .install i,
-  .sidebar-bottom .user i {
+  .sidebar-bottom .user img {
     margin: 0;
   }
 
