@@ -130,7 +130,8 @@ ul {
 
 .user-playlists i {
   font-size: 38px;
-  margin-right: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .user-playlists a:nth-child(2) {
