@@ -506,10 +506,7 @@ ul {
     flex-basis: 0px;
   }
 
-  .sidebar-top .logo-big,
-  .sidebar-top .menu-item,
-  .sidebar-top .user-playlists,
-  .sidebar-bottom .menu-item,
+  .hide-mobile,
   .sidebar-bottom .install::after {
     display: none;
   }
